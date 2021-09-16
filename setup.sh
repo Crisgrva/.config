@@ -5,6 +5,10 @@ then
 	echo "Sorry, you are not root."
 	exit 1
 fi
+
+#Go to root
+cd ~
+
 #Restore content from Ubuntu
 echo -e "Unminimizing Ubuntu..."
 unminimize
@@ -18,13 +22,17 @@ echo -e "Installing cUrl..."
 #Install curl
 apt-get -y install curl
 
-echo -e "Installing NeoVim..."
-#Install NeoVim
-apt-get install neovim
-
 echo -e "Installing Git..."
 #Install Git
 apt-get install git
+
+echo -e "Installing NeoVim..."
+#Install NeoVim
+apt-get install neovim
+git clone https://github.com/Crisgrva/Config.git
+rm README.md
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 echo -e "Installing Build-Essencial..."
 #Install Build Essencial -> Tools for C
