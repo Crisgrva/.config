@@ -5,7 +5,12 @@ then
 	echo "Sorry, you are not root."
 	exit 1
 fi
+#Restore content from Ubuntu
+echo -e "Unminimizing Ubuntu..."
+unminimize
+
 echo -e "Updating apt-get..."
+#Update && Upgrade
 apt-get update
 apt-get upgrade
 
@@ -30,6 +35,8 @@ echo -e "Installing Betty..."
 git clone https://github.com/holbertonschool/Betty.git
 cd Betty/
 ./install.sh
+cd ..
+rm -rf Betty/
 
 echo -e "Installing Python3, PIP & Pycodestyle..."
 #Install Python3
