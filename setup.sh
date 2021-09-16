@@ -29,8 +29,9 @@ apt-get install git
 echo -e "Installing NeoVim..."
 #Install NeoVim
 apt-get install neovim
-git clone https://github.com/Crisgrva/Config.git
-rm README.md
+git clone https://github.com/Crisgrva/configs.git
+ln -s configs/.vim/ .vim
+ln -s configs/.vimrc .vimrc
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
