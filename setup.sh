@@ -19,3 +19,11 @@ apt-get install zsh
 #Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+#Install Build Essencial -> Tools to C
+apt-get -y install build-essential
+
+#Install Betty
+git clone https://github.com/holbertonschool/Betty.git
+cd Betty/
+./install.sh
+
