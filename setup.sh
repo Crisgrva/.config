@@ -26,6 +26,11 @@ echo -e "Installing Git..."
 #Install Git
 apt-get install git
 
+echo -e "Installing Node16.x"
+#Install Node16.x
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+apt-get install -y nodejs
+
 echo -e "Installing NeoVim..."
 #Install NeoVim
 apt-get install neovim
