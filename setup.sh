@@ -22,11 +22,12 @@ echo "✅5.  Install Node 16.x"
 echo "✅6.  Install NeoVim with custom settings"
 echo "✅7.  Install Build Essential"
 echo "✅8.  Install Betty Style Guide"
-echo "✅9.  Install Python3"
-echo "✅10. Install Python3-PIP"
-echo "✅11. Install Pycodestyle"
-echo "✅12. Install ZSH"
-echo "✅13. Install OhMyZsh"
+echo "✅9.  Install Valgrind"
+echo "✅10. Install Python3"
+echo "✅11. Install Python3-PIP"
+echo "✅12. Install Pycodestyle"
+echo "✅13. Install ZSH"
+echo "✅14. Install OhMyZsh"
 echo ""
 echo "Made by @Crisgrva"
 echo ""
@@ -81,6 +82,10 @@ cd Betty/
 ./install.sh
 cd ..
 rm -rf Betty/
+
+echo -e "installing Valgrind"
+#Install Valgrind
+apt-get install valgrind
 
 echo -e "Installing Python3, PIP & Pycodestyle..."
 #Install Python3
