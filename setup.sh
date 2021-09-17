@@ -28,7 +28,7 @@ apt-get install git
 
 echo -e "Installing Node16.x"
 #Install Node16.x
-curl -fsSL https://deb.nodesource.com/setup_16.x | -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 apt-get install -y nodejs
 
 echo -e "Installing NeoVim..."
