@@ -35,7 +35,7 @@ echo ""
 # Giving the option to push
 branch=$(git rev-parse --abbrev-ref HEAD)
 read -p $'\e[33mDo you want to push to '$branch' y/n: ' choose
-echo $'\e[0m'
+echo $'\e[0m' #End of color Yellow
 
 if [ $choose = "y" ] || [ $choose = "Y" ]
 then
