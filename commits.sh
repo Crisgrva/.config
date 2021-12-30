@@ -40,5 +40,5 @@ echo $'\e[0m' #End of color Yellow
 if [ $choose = "y" ] || [ $choose = "Y" ]
 then
     echo "Pushing to $branch...."
-    git push origin $(current_branch)
+    git push origin $branch
 fi
